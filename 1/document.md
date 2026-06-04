@@ -6,9 +6,9 @@
 
 点击左侧的 IP Catalog，右侧会出现完整的IP目录。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604110607925.png" alt="image-20260604110607925" style="zoom:67%;" />
+<img src="./images/image-20260604110607925.png" alt="image-20260604110607925" style="zoom:67%;" />
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604110719457.png" alt="image-20260604110719457" style="zoom:67%;" />
+<img src="./images/image-20260604110719457.png" alt="image-20260604110719457" style="zoom:67%;" />
 
 # 1 IP软核的参数
 
@@ -18,15 +18,15 @@
 
 选择左侧的Settings,再在弹出的界面中选择左侧的Synthesis,可以在右侧看到一系列的综合参数。这些参数是所有IP核共享的。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604111610938.png" alt="image-20260604111610938" style="zoom:67%;" />
+<img src="./images/image-20260604111610938.png" alt="image-20260604111610938" style="zoom:67%;" />
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604111727818.png" alt="image-20260604111727818" style="zoom:67%;" />
+<img src="./images/image-20260604111727818.png" alt="image-20260604111727818" style="zoom:67%;" />
 
 ## 1.2 自己特色的参数
 
 我们在IP Catalog中双击选中一个IP核（以`Multiplier`为例），会出现IP核的配置界面。在这里可以定制所需规格的IP核，当然不同的IP核定制时的参数是不同的。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604112356784.png" alt="image-20260604112356784" style="zoom:67%;" />
+<img src="./images/image-20260604112356784.png" alt="image-20260604112356784" style="zoom:67%;" />
 
 # 2 多个IP如何联动？
 
@@ -36,7 +36,7 @@
 
 这里的示例是：两个常量IP核（`Constant`）经过一个乘法器IP核（`Multiplier`），得到最终的输出result。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604155915605.png" alt="image-20260604155915605" style="zoom: 50%;" />
+<img src="./images/image-20260604155915605.png" alt="image-20260604155915605" style="zoom: 50%;" />
 
 之后再执行Generate Output Products、Create HDL Wrapper，就会得到顶层设计文件（`design_wrapper.v`）。接着就可以运行综合（Run Synthesis）了。
 
@@ -286,7 +286,7 @@ puts "Block Design design_tcl has been created successfully."
 
 3. 在 Vivado 的 Tcl Console 里输入：`source /data/projects/vivado_projects/project_2/create_ip_chain_bd.tcl`然后回车。如下图所示，会自动生成bd文件。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604214600964.png" alt="image-20260604214600964" style="zoom: 50%;" />
+<img src="./images/image-20260604214600964.png" alt="image-20260604214600964" style="zoom: 50%;" />
 
 
 
@@ -334,7 +334,7 @@ endmodule
 
 找到` FIFO IP`（`fifo_generator_0 (fifo_generator_0.xci)`），右键执行Open IP Example Design，会自动创建一个示例工程。 在这里，有Vivado 自动生成的仿真测试文件（`fifo_generator_0_tb`），可以直接修改自动生成的 `fifo_generator_0_tb`。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604162938881.png" alt="image-20260604162938881" style="zoom: 50%;" />
+<img src="./images/image-20260604162938881.png" alt="image-20260604162938881" style="zoom: 50%;" />
 
 直接执行Run Simulation → Run Behavioral Simulation运行测试。
 
@@ -342,9 +342,9 @@ endmodule
 
 添加仿真源文件。Add Sources → Add or create simulation sources → Create File。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604163737249.png" alt="image-20260604163737249" style="zoom:67%;" />
+<img src="./images/image-20260604163737249.png" alt="image-20260604163737249" style="zoom:67%;" />
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604163957690.png" alt="image-20260604163957690" style="zoom:50%;" />
+<img src="./images/image-20260604163957690.png" alt="image-20260604163957690" style="zoom:50%;" />
 
 它现在只是一个空的 testbench 模板，需要把里面内容全部替换成完整 testbench。把当前文件内容全部删掉，替换成下面代码：
 
@@ -455,7 +455,7 @@ endmodule
 
 定制了IP核后，执行Generate Output Products。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604170636227.png" alt="image-20260604170636227" style="zoom: 67%;" />
+<img src="./images/image-20260604170636227.png" alt="image-20260604170636227" style="zoom: 67%;" />
 
 
 
@@ -463,7 +463,7 @@ endmodule
 
 ### 4.2.1 方法1：使用自带Testbench测试。
 
-<img src="/home/dpc/.config/Typora/typora-user-images/image-20260604172553940.png" alt="image-20260604172553940" style="zoom: 50%;" />
+<img src="./images/image-20260604172553940.png" alt="image-20260604172553940" style="zoom: 50%;" />
 
 右键`tb_div_gen_0` 选择Set as Top，然后运行仿真：SIMULATION → Run Simulation → Run Behavioral Simulation。
 
