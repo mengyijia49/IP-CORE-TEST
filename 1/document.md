@@ -6,9 +6,9 @@
 
 点击左侧的 IP Catalog，右侧会出现完整的IP目录。
 
-<img src="./images/image-20260604110607925.png" alt="image-20260604110607925" style="zoom:67%;" />
+<img src="./images/image-20260604110607925.png" alt="image-20260604110607925"  />
 
-<img src="./images/image-20260604110719457.png" alt="image-20260604110719457" style="zoom:67%;" />
+<img src="./images/image-20260604110719457.png" alt="image-20260604110719457"  />
 
 # 1 IP软核的参数
 
