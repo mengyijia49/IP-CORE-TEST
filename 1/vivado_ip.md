@@ -6,9 +6,9 @@
 
 点击左侧的 IP Catalog，右侧会出现完整的IP目录。
 
-<img src="./images/image-20260604110607925.png" alt="image-20260604110607925"  />
+![image-20260605104623032](/home/dpc/.config/Typora/typora-user-images/image-20260605104623032.png)
 
-<img src="./images/image-20260604110719457.png" alt="image-20260604110719457"  />
+
 
 # 1 IP软核的参数
 
@@ -27,6 +27,8 @@
 我们在IP Catalog中双击选中一个IP核（以`Multiplier`为例），会出现IP核的配置界面。在这里可以定制所需规格的IP核，当然不同的IP核定制时的参数是不同的。
 
 <img src="./images/image-20260604112356784.png" alt="image-20260604112356784"  />
+
+
 
 # 2 多个IP如何联动？
 
@@ -292,8 +294,6 @@ puts "Block Design design_tcl has been created successfully."
 
 # 3 如何将已有的IP插入已有的代码中？
 
-
-
 ## 3.1  方法1：在 RTL 代码中直接例化 IP
 
 对于接口较简单的 Vivado 自带软 IP，可以直接在已有 Verilog/VHDL 代码中例化该 IP。基本流程为：先在 IP Catalog 中定制 IP，执行 Generate Output Products，随后查看 Vivado 生成的 IP 例化模板，例如 `.veo` 文件或 Open IP Instantiation Template。然后在已有 RTL 模块中按照模板例化 IP，并连接时钟、复位和数据端口。
@@ -321,6 +321,8 @@ module my_top(
 
 endmodule
 ```
+
+
 
 # 4 testbench能不能改？能。
 
