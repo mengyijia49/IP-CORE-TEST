@@ -6,7 +6,7 @@
 
 点击左侧的 IP Catalog，右侧会出现完整的IP目录。
 
-![image-20260605104623032](/home/dpc/.config/Typora/typora-user-images/image-20260605104623032.png)
+![image-20260605104623032](./images/image-20260605104623032.png)
 
 
 
