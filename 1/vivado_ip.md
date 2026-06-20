@@ -4,7 +4,8 @@
 
 # 0 IP核的位置
 
-点击左侧的 IP Catalog，右侧会出现完整的IP目录。
+> 点击左侧的 IP Catalog，右侧会出现完整的IP目录。
+>
 
 <img src="./images/image-20260605104623032.png" alt="image-20260605104623032"  />
 
